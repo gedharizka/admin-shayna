@@ -117,6 +117,8 @@ class ProductController extends Controller
         $item = Product::findOrFail($id);
         $item->delete();
 
+        ProductGallery::where('products_id', $id)->delete();
+
         return redirect()->route('products.index');
     }
 
@@ -132,5 +134,5 @@ class ProductController extends Controller
             'items' => $items
         ]);
     }
-    
+
 }
