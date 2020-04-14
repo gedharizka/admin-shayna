@@ -35,14 +35,14 @@
               <input  type="radio"
                     name="is_default" 
                     value="1" 
-                    class="form-control @error('is_default') is-invalid @enderror"/> Ya
+                    class="form-control @error('is_default') is-invalid @enderror"/>Yes
             </label>
             &nbsp;
             <label>
               <input  type="radio"
                     name="is_default" 
                     value="0" 
-                    class="form-control @error('is_default') is-invalid @enderror"/> Tidak
+                    class="form-control @error('is_default') is-invalid @enderror"/>No
             </label>
             @error('is_default') <div class="text-muted">{{ $message }}</div> @enderror
           </div>
